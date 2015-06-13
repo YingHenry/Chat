@@ -1,0 +1,22 @@
+{% extends 'ChatBundle::layout.html.twig' %}
+
+{% block main %}
+	<div class="cf">
+		<div id="userList">
+
+		</div>
+		<div id="messages">
+
+		</div>
+	</div>
+	
+	<div id="message">
+		<label for="newMessage">Message: </label>
+		<input id="newMessage" type="text">
+	</div>
+{% endblock %}
+
+{% block javascripts %}
+	{{ parent() }}
+    <script src="{{ asset('js/main.js') }}"></script>
+{% endblock %}

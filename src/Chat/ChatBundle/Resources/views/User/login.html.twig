@@ -1,0 +1,17 @@
+{# src/Chat/ChatBundle/Resources/views/User/login.html.twig #}
+
+{% extends 'ChatBundle::layout.html.twig' %}
+
+{% block headerTitle %}Login{% endblock %}
+	
+{% block main %}
+	<form action="{{ path('chat_user_login_check') }}" method="post" novalidate="novalidate">
+        {% if error.message is defined %}
+            {{ error.message }}
+        {% endif %}		
+		<input type="text" name="_username" required="required" value={{ last_username }}>
+		<input type="password" name="_password" required="required">
+		<button type="submit">SE CONNECTER</button>
+		<input type="hidden" name="_csrf_token" value="{{ csrf_token('authenticate') }}">
+	</form>
+{% endblock %}

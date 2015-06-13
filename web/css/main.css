@@ -1,0 +1,94 @@
+
+
+html{
+	height: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+body{
+	overflow: hidden; /* empêche la création d'un ascenseur lorsque le contenu déborde */
+
+	font-family: Arial;
+
+	box-sizing: border-box;
+	height: 100%;
+	padding: 50px 0;
+	margin: 0;
+}
+
+main{
+	height: 100%;
+}
+
+h1, h2, h3{
+	
+	margin: 0;
+	padding: 8px;
+}
+
+h1{
+	position: absolute;
+	top: 0;
+}
+
+ul{
+	list-style-type: none;
+	padding: 8px;
+	margin: 0;
+}
+
+#userList, #messages{
+	box-sizing: border-box;
+	float: left;
+	height: 100%;
+}
+
+#userList{
+	width: 20%;
+	overflow: hidden;
+}
+
+#messages{
+	width: 80%;
+	border-left: 1px solid black;
+
+	overflow-y: auto;
+}
+
+#message{
+	position: absolute;
+	bottom: 0;
+}
+
+.cf{
+	height: 100%;
+}
+
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+ 
+.cf:before,
+.cf:after {
+    content: " ";
+    display: block; 
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}

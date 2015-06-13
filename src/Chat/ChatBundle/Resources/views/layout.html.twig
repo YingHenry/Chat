@@ -1,0 +1,25 @@
+{% extends '::base.html.twig' %}
+
+{% block stylesheets %}
+	{{ parent() }}
+	<link rel="stylesheet" href="{{ asset('css/main.css') }}">
+{% endblock %}
+
+{% block body %}
+	<header>
+		<h1>{% block headerTitle %}{% endblock %}</h1>
+	</header>
+	
+	<main>
+		{% block main %}{% endblock %}
+	</main>
+
+	<footer>
+		
+	</footer>
+{% endblock %}
+
+{% block javascripts %}
+	{{ parent() }}
+    <script src="{{ asset('js/jquery-2.1.4.min.js') }}"></script>
+{% endblock %}

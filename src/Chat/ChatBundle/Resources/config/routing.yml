@@ -1,0 +1,34 @@
+# src/Chat/ChatBundle/Resources/config/routing.yml
+chat_user_login:
+    path: /user/login
+    defaults: { _controller: ChatBundle:User:login }
+
+chat_user_login_check:
+    path: /user/login-check
+
+chat_user_logout:
+    path: /user/logout
+
+chat_user_sign_up:
+    path: /user/sign-up
+    defaults: { _controller: ChatBundle:User:signUp }
+
+chat_user_index:
+    path: /
+    defaults: { _controller: ChatBundle:User:index }
+
+chat_chat_index:
+    path: /chat
+    defaults: { _controller: ChatBundle:Chat:index }
+
+chat_chat_user_list:
+    path: /chat/user-list
+    defaults: { _controller: ChatBundle:Chat:userList }
+
+chat_chat_message_list:
+    path: /chat/message-list
+    defaults: { _controller: ChatBundle:Chat:messageList }
+
+chat_chat_message_add:
+    path: /chat/message-add
+    defaults: { _controller: ChatBundle:Chat:messageAdd }

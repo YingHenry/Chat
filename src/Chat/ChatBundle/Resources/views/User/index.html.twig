@@ -1,0 +1,16 @@
+{% extends 'ChatBundle::layout.html.twig' %}
+
+{% block headerTitle %}Index{% endblock %}
+
+{% block main %}
+    {% for message in app.session.flashbag.get('notice') %}
+        {{ message }}
+    {% endfor %}
+    
+	{% if is_granted('IS_AUTHENTICATED_REMEMBERED') %}
+		Salut {{ app.user.username }}! <a href="{{ path('chat_chat_index') }}">Rejoindre le chat</a> <a href="{{ path('chat_user_logout') }}">Se déconnecter</a>
+	{% else %}
+		<a href="{{ path('chat_user_login') }}">Se connecter</a>
+	{% endif %}
+	<a href="{{ path('chat_user_sign_up') }}">Créer un nouveau compte</a>
+{% endblock %}

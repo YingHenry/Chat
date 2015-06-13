@@ -1,0 +1,7 @@
+{% extends 'ChatBundle::layout.html.twig' %}
+
+{% block headerTitle %}Inscription{% endblock %}
+
+{% block main %}
+	{{ form(userForm, {"attr": {"novalidate": "novalidate"}}) }}
+{% endblock %}
