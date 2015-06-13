@@ -3,4 +3,4 @@ services:
         class: Chat\ChatBundle\EventListener\ActivityListener
         arguments: [@security.context, @doctrine.orm.entity_manager]
         tags:
-            - { name: kernel.event_listener, event: kernel.controller, method: updateLastActivity }
+            - { name: kernel.event_listener, event: kernel.controller, method: onKernelController }

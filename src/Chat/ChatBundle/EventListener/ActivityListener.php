@@ -18,7 +18,7 @@ class ActivityListener
 		$this->entityManager = $entityManager;
 	}
 
-	public function updateLastActivity()
+	public function onKernelController()
 	{
 		if ($this->securityContext->getToken()) {
 			$user = $this->securityContext->getToken()->getUser();
