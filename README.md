@@ -1,11 +1,11 @@
 
-création d'un nouveau projet Symfony avec Composer
-création d'une nouvelle base de données sur phpMyAdmin
-création d'un nouveau bundle
-mise en place de la structure Twig (base, layout, page)
-compte utilisateur
-    route Yaml
-    contrôleur
+- création d'un nouveau projet Symfony avec Composer
+- création d'une nouvelle base de données sur phpMyAdmin
+- création d'un nouveau bundle
+- mise en place de la structure Twig (base, layout, page)
+- compte utilisateur
+    - route Yaml
+    - contrôleur
         manager/repository
         rendu de vue
         redirection
