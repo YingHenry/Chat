@@ -22,8 +22,7 @@ Feuille de route
         - constructeur 
     - formulaire
         - ajout des différents types de champs
-        - validation
-        - cascade     
+        - validation 
     - sécurité
         - encryptage bcrypt 
         - fournisseur
